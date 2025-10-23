@@ -84,6 +84,7 @@ Corner Test Cases
 | 6    | `6`<br>`-1 -5 -3 -5 -2 -1` | `-2`            | Unique: {-5,-3,-2,-1} → 2nd largest = -2 |
 
 Submission summary 
+
 This project presents three progressively optimized approaches to find the second largest unique number from an integer array.
 
 Brute Force Approach — sorts the array and scans backward to identify the second distinct element.
