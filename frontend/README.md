@@ -17,31 +17,9 @@ Client-side pagination (6 users per page)
 Loading and error states
 Responsive design for desktop and mobile
 
-🧱 Folder Structure
-
-frontend/
-├─ public/
-│ └─ favicon.png
-├─ src/
-│ ├─ components/
-│ │ └─ ui/
-│ ├─ hooks/
-│ │ ├─ use-mobile.tsx
-│ │ └─ use-toast.ts
-│ ├─ lib/
-│ │ └─ utils.ts
-│ ├─ pages/
-│ │ ├─ Index.tsx
-│ │ └─ NotFound.tsx
-│ ├─ App.tsx
-│ ├─ main.tsx
-│ └─ index.html
-└─ package.json
-
 ⚙️ Setup Instructions
 1. Clone the repository
-git clone https://github.com/your-username/user-directory.git
-cd user-directory
+git clone https://github.com/patnaikAnwesh/Assignment/frontend
 
 2. Install dependencies
 npm install
