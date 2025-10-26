@@ -18,6 +18,7 @@ Loading and error states
 Responsive design for desktop and mobile
 
 🧱 Folder Structure
+
 frontend/
 ├── node_modules/          
 ├── public/
@@ -54,8 +55,6 @@ npm install
 3. Start the development server
 npm start
 
-
-Open: http://localhost:3000
 
 🧩 Key Components
 Component	Description
