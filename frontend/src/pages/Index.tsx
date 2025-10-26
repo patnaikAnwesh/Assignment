@@ -86,6 +86,7 @@ const Index = () => {
           method: 'GET',
           headers: {
             'Accept': 'application/json',
+            'x-api-key': 'reqres-free-v1',
           },
         });
         
