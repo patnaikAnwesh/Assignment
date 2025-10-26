@@ -53,13 +53,13 @@ mvnw.cmd -version  # Windows
 
 ```bash
 # Using HTTPS
-git clone https://github.com/patnaikAnwesh/simple-todo-springboot.git
+git clone https://github.com/patnaikAnwesh/Assignment
 
 # Or using SSH
-git clone git@github.com:patnaikAnwesh/simple-todo-springboot.git
+git clone git@github.com:patnaikAnwesh/Assignment
 
 # Navigate to project directory
-cd simple-todo-springboot
+cd backend
 ```
 
 ### Step 2: Build the Project
@@ -105,17 +105,7 @@ mvnw.cmd spring-boot:run
 mvn spring-boot:run
 ```
 
-### Method 3: Running the JAR
-
-```bash
-# Build first
-./mvnw clean package
-
-# Run the JAR
-java -jar target/simple-todo-springboot-1.0.0.jar
-```
-
-### Method 4: From IDE
+### Method 3: From IDE
 
 1. Open the project in your IDE (IntelliJ IDEA, Eclipse, VS Code)
 2. Navigate to `src/main/java/com/example/todo/SimpleTodoSpringbootApplication.java`
@@ -193,7 +183,7 @@ http://localhost:8080
 ## 📁 Project Structure
 
 ```
-simple-todo-springboot/
+backend/
 ├── src/
 │   ├── main/
 │   │   ├── java/
@@ -221,7 +211,6 @@ simple-todo-springboot/
 │               └── example/
 │                   └── simple_todo_springboot/
 │                       └── SimpleTodoSpringbootApplicationTests.java
-├── target/                                                        # Build output
 ├── .gitignore                                                     # Git ignore rules
 ├── mvnw                                                           # Maven wrapper (Unix)
 ├── mvnw.cmd                                                       # Maven wrapper (Windows)
