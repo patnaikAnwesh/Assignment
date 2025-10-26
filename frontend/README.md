@@ -1,73 +1,66 @@
-# Welcome to your Lovable project
+🧑‍💻 User Directory Table
 
-## Project info
+A modern React application that displays user data fetched from the Reqres API, featuring search, sorting, filtering, and pagination — all on the client side. 
 
-**URL**: https://lovable.dev/projects/3e3d6df2-65d6-43c5-9d4c-206f6bfcf4cf
+🚀 Live Demo
+Live: https://assignment-seven-psi-54.vercel.app/
+(Deployed on Vercel)
 
-## How can I edit this code?
+✨ Features
 
-There are several ways of editing your application.
+Fetches user data from the Reqres API
+Search by name or email
+Sort by name or email (ascending/descending)
+Filter by email domain
+Filter by first letter of name
+Client-side pagination (6 users per page)
+Loading and error states
+Responsive design for desktop and mobile
 
-**Use Lovable**
+🧱 Folder Structure
+frontend/
+├── node_modules/          
+├── public/
+│   └── favicon.png
+├── src/
+│   ├── components/
+│   │   └── ui/            
+│   ├── hooks/             
+│   │   ├── use-mobile.tsx
+│   │   └── use-toast.ts
+│   ├── lib/
+│   │   └── utils.ts       
+│   ├── pages/
+│   │   ├── Index.tsx     
+│   │   └── NotFound.tsx  
+│   ├── App.tsx            
+│   ├── main.tsx           
+│   ├── App.css
+│   └── index.css
+├── .gitignore
+├── bun.lockb (or package-lock.json / pnpm-lock.yaml)
+├── package.json
+└── tsconfig.json / vite.config.ts (may be hidden)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/3e3d6df2-65d6-43c5-9d4c-206f6bfcf4cf) and start prompting.
 
-Changes made via Lovable will be committed automatically to this repo.
+⚙️ Setup Instructions
+1. Clone the repository
+git clone https://github.com/your-username/user-directory.git
+cd user-directory
 
-**Use your preferred IDE**
+2. Install dependencies
+npm install
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+3. Start the development server
+npm start
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Follow these steps:
+Open: http://localhost:3000
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/3e3d6df2-65d6-43c5-9d4c-206f6bfcf4cf) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+🧩 Key Components
+Component	Description
+UserTable	Displays user data with sorting and filtering controls
+SearchBar	Filters users by name or email
+Pagination	Client-side paging UI
+FilterDropdown	Domain / first-letter filters
+Loader	Loading spinner while fetching data
