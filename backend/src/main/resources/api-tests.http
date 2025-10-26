@@ -1,0 +1,66 @@
+### 1. Get all todos (initially empty)
+GET http://localhost:8080/todos
+
+### 2. Create a new todo
+POST http://localhost:8080/todos
+Content-Type: application/json
+
+{
+  "title": "Buy groceries",
+  "completed": false
+}
+
+### 3. Create another todo
+POST http://localhost:8080/todos
+Content-Type: application/json
+
+{
+  "title": "Finish project",
+  "completed": false
+}
+
+### 4. Get all todos (should show 2 todos)
+GET http://localhost:8080/todos
+
+### 5. Update a todo - Replace {id} with actual ID from step 2
+PUT http://localhost:8080/todos/{paste-id-here}
+Content-Type: application/json
+
+{
+  "title": "Buy groceries and vegetables",
+  "completed": true
+}
+
+### 6. Get all todos (verify update)
+GET http://localhost:8080/todos
+
+### 7. Delete a todo - Replace {id} with actual ID
+DELETE http://localhost:8080/todos/{paste-id-here}
+
+### 8. Get all todos (verify deletion)
+GET http://localhost:8080/todos
+
+### 9. Try to update non-existent todo (should return 404)
+PUT http://localhost:8080/todos/non-existent-id
+Content-Type: application/json
+
+{
+  "title": "This should fail"
+}
+
+### 10. Test validation - Empty title (should return 400)
+POST http://localhost:8080/todos
+Content-Type: application/json
+
+{
+  "title": "",
+  "completed": false
+}
+
+### 11. Test validation - Missing title (should return 400)
+POST http://localhost:8080/todos
+Content-Type: application/json
+
+{
+  "completed": false
+}
