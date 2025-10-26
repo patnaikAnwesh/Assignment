@@ -20,29 +20,23 @@ Responsive design for desktop and mobile
 🧱 Folder Structure
 
 frontend/
-├── node_modules/          
-├── public/
-│   └── favicon.png
-├── src/
-│   ├── components/
-│   │   └── ui/            
-│   ├── hooks/             
-│   │   ├── use-mobile.tsx
-│   │   └── use-toast.ts
-│   ├── lib/
-│   │   └── utils.ts       
-│   ├── pages/
-│   │   ├── Index.tsx     
-│   │   └── NotFound.tsx  
-│   ├── App.tsx            
-│   ├── main.tsx           
-│   ├── App.css
-│   └── index.css
-├── .gitignore
-├── bun.lockb (or package-lock.json / pnpm-lock.yaml)
-├── package.json
-└── tsconfig.json / vite.config.ts (may be hidden)
-
+├─ public/
+│ └─ favicon.png
+├─ src/
+│ ├─ components/
+│ │ └─ ui/
+│ ├─ hooks/
+│ │ ├─ use-mobile.tsx
+│ │ └─ use-toast.ts
+│ ├─ lib/
+│ │ └─ utils.ts
+│ ├─ pages/
+│ │ ├─ Index.tsx
+│ │ └─ NotFound.tsx
+│ ├─ App.tsx
+│ ├─ main.tsx
+│ └─ index.html
+└─ package.json
 
 ⚙️ Setup Instructions
 1. Clone the repository
@@ -54,7 +48,6 @@ npm install
 
 3. Start the development server
 npm start
-
 
 🧩 Key Components
 Component	Description
